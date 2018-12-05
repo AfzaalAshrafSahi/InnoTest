@@ -1,0 +1,73 @@
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="http://static.tvmaze.com/images/tvm-header-logo.png" alt=""  >
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li  routerLinkActive="active" class="nav-item active">
+                <a class="nav-link"  id="hideelement"  routerLink="Movies" >Movies List
+                  
+                </a>
+              </li>
+               
+              <li class="nav-item">
+                <a class="nav-link"  routerLink="Contact">Contact</a>
+                <span  class="sr-only">(current)</span>
+              </li>
+              <li>
+
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div id="hideelementname">
+        <div  class="collapse navbar-collapse" id="mainmenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="Images/others/user.png" style="width:15px;height:15px" />  {{UserName}}<span class="caret"></span>
+                        </a> -->
+                        <a href="#"  (click)="logout()" [routerLink]="['Login']"  >
+                                  <span> Logout </span>
+                            </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li style="padding:15px;text-align:center">
+                                <img src="~/Images/others/user.png" alt="user" style="width:100px;height:100px" />
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span> Change Password</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/users/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div> 
+        </div>
+            </nav>
+         
+     
+<br>
+<br>
+<br>
+<br>
+<!-- <app-contacts></app-contacts> -->
+ <router-outlet></router-outlet>  
+<footer class="py-3 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Afzaal Ashraf &copy; 2018</p>
+        </div>
+         <!-- /.container -->  
+          </footer>  
+  <!-- <div><app-login></app-login></div>  -->
+  <!-- <div><app-detail></app-detail></div>  -->
+  
+    <!-- <div><personal-detail></personal-detail></div>  -->
+   
+ 

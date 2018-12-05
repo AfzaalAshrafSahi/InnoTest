@@ -1,0 +1,37 @@
+<br>
+<br>
+<h1>Here is Movies detail</h1>
+<div style="height:400px ; overflow-y: auto">
+<table class="table table-bordered">
+       
+        <thead>
+           
+            <tr class="bg-primary">
+                
+                <td class="col-lg-6">
+                    Title
+                </td>
+                
+                <td class="col-lg-6">
+                    Images
+                </td>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+        
+            <tr *ngFor="let detail of PersonalDetail">
+                <td class="col-lg-6">
+                   <a [routerLink]="['MovieDetail',detail.show.name]">{{detail.show.name}} </a> 
+                </td>
+               
+                <td class="col-lg-6">
+                     
+                       <img [src]="detail.show.image.medium" alt="moviesImage" >
+                </td>
+            </tr>
+        
+
+    </tbody>
+
+</table>
+</div>
